@@ -1,4 +1,4 @@
-import { Basket, FunnelSimple, House, Pill} from "@phosphor-icons/react";
+import { FunnelSimple, House, Pill, PlusCircle} from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
 function Navbar(){
@@ -11,8 +11,8 @@ function Navbar(){
 
                         <div className="flex gap-5">
                             <Link to='/home' className="hover:scale-110 flex items-center gap-1"><House size={16} />Home</Link>
-                            <div className="hover:scale-110 flex items-center gap-1"><Basket size={16} />Produtos</div>
-                            <div className="hover:scale-110 flex items-center gap-1"><FunnelSimple size={16} />Categorias</div>
+                            <Link to='/categorias' className="hover:scale-110 flex items-center gap-1"><FunnelSimple size={16} />Categorias</Link>
+                            <Link to='/cadastroCategoria' className="hover:scale-110 flex items-center gap-1"><PlusCircle size={16} />Nova Categoria</Link>
                         </div>
                 </div>
             </div>
